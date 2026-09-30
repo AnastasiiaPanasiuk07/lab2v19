@@ -98,11 +98,11 @@ std::string Payment::toString() const
     std::cout << "Оклад: " << this->salary << " грн\n";
     std::cout << "Прибутковий податок: " << this->taxPercent << "%\n";
     std::cout << "Рік вступу: " << this->startYear << " \n";
-    std::cout << "Стаж:" << this->CalculateExperience(2026) << " ðîê³â\n";
+    std::cout << "Стаж:" << this->CalculateExperience(2026) << " років\n";
     std::cout << "Відсоток надбавки: " << this->bonusPercent << "%\n";
-    std::cout << "Відпрацьовано днів: " << this->workedDays << " ç " << this->totalWorkingDays <<"\n";
-    std::cout << "Нарахована сума: " << this->accruedAmount << " ãðí\n";
-    std::cout << "Утримана сума: " << this->withheldAmount << " ãðí\n";
+    std::cout << "Відпрацьовано днів: " << this->workedDays << " з " << this->totalWorkingDays <<"\n";
+    std::cout << "Нарахована сума: " << this->accruedAmount << " грн\n";
+    std::cout << "Утримана сума: " << this->withheldAmount << " грн\n";
     std::cout << "Сума до виплати: " << (this->accruedAmount - this->withheldAmount) << " ãðí\n";
 
     return ss.str();
