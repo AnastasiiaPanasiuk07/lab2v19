@@ -43,14 +43,14 @@ void Payment::Init(std::string lastName, std::string firstName, std::string midd
 void Payment::Read()
 {
     std::cout << " -\n";
-    std::cout << "Ââåä³òü ïð³çâèùå: "; std::cin >> this->lastName;
-    std::cout << "Ââåä³òü ³ì'ÿ: "; std::cin >> this->firstName;
-    std::cout << "Ââåä³òü ïî áàòüêîâ³: "; std::cin >> this->middleName;
-    std::cout << "Ââåä³òü îêëàä: "; std::cin >> this->salary;
-    std::cout << "Ââåä³òü ð³ê âñòóïó íà ðîáîòó: "; std::cin >> this->startYear;
-    std::cout << "Ââåä³òü â³äñîòîê íàäáàâêè: "; std::cin >> this->bonusPercent;
-    std::cout << "Ââåä³òü ê³ëüê³ñòü â³äïðàöüîâàíèõ äí³â: "; std::cin >> this->workedDays;
-    std::cout << "Ââåä³òü ê³ëüê³ñòü ðîáî÷èõ äí³â ó ì³ñÿö³: "; std::cin >> this->totalWorkingDays;
+    std::cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð¿Ñ€Ñ–Ð·Ð²Ð¸Ñ‰Ðµ: "; std::cin >> this->lastName;
+    std::cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ–Ð¼'Ñ: "; std::cin >> this->firstName;
+    std::cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð¿Ð¾ Ð±Ð°Ñ‚ÑŒÐºÐ¾Ð²Ñ–: "; std::cin >> this->middleName;
+    std::cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð¾ÐºÐ»Ð°Ð´: "; std::cin >> this->salary;
+    std::cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ€Ñ–Ðº Ð²ÑÑ‚ÑƒÐ¿Ñƒ Ð½Ð° Ñ€Ð¾Ð±Ð¾Ñ‚Ñƒ: "; std::cin >> this->startYear;
+    std::cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð²Ñ–Ð´ÑÐ¾Ñ‚Ð¾Ðº Ð½Ð°Ð´Ð±Ð°Ð²ÐºÐ¸: "; std::cin >> this->bonusPercent;
+    std::cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð²Ñ–Ð´Ð¿Ñ€Ð°Ñ†ÑŒÐ¾Ð²Ð°Ð½Ð¸Ñ… Ð´Ð½Ñ–Ð²: "; std::cin >> this->workedDays;
+    std::cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ñ€Ð¾Ð±Ð¾Ñ‡Ð¸Ñ… Ð´Ð½Ñ–Ð² Ñƒ Ð¼Ñ–ÑÑÑ†Ñ–: "; std::cin >> this->totalWorkingDays;
     std::cout << " -\n";
 
     if (this->totalWorkingDays <= 0)
@@ -94,16 +94,16 @@ std::string Payment::toString() const
     std::ostringstream ss;
 
     std::cout << " -\n";
-    std::cout << "Ïðàö³âíèê: " << this->lastName << " " << this->firstName << " " << this->middleName << "\n";
-    std::cout << "Îêëàä: " << this->salary << " ãðí\n";
-    std::cout << "Ïðèáóòêîâèé ïîäàòîê: " << this->taxPercent << "%\n";
-    std::cout << "Ð³ê âñòóïó: " << this->startYear << " \n";
-    std::cout << "Ñòàæ:" << this->CalculateExperience(2026) << " ðîê³â\n";
-    std::cout << "Â³äñîòîê íàäáàâêè: " << this->bonusPercent << "%\n";
-    std::cout << "Â³äïðàöüîâàíî äí³â: " << this->workedDays << " ç " << this->totalWorkingDays <<"\n";
-    std::cout << "Íàðàõîâàíà ñóìà: " << this->accruedAmount << " ãðí\n";
-    std::cout << "Óòðèìàíà ñóìà: " << this->withheldAmount << " ãðí\n";
-    std::cout << "Ñóìà äî âèïëàòè: " << (this->accruedAmount - this->withheldAmount) << " ãðí\n";
+    std::cout << "ÐŸÑ€Ð°Ñ†Ñ–Ð²Ð½Ð¸Ðº: " << this->lastName << " " << this->firstName << " " << this->middleName << "\n";
+    std::cout << "ÐžÐºÐ»Ð°Ð´: " << this->salary << " Ð³Ñ€Ð½\n";
+    std::cout << "ÐŸÑ€Ð¸Ð±ÑƒÑ‚ÐºÐ¾Ð²Ð¸Ð¹ Ð¿Ð¾Ð´Ð°Ñ‚Ð¾Ðº: " << this->taxPercent << "%\n";
+    std::cout << "Ð Ñ–Ðº Ð²ÑÑ‚ÑƒÐ¿Ñƒ: " << this->startYear << " \n";
+    std::cout << "Ð¡Ñ‚Ð°Ð¶:" << this->CalculateExperience(2026) << " Ã°Ã®ÃªÂ³Ã¢\n";
+    std::cout << "Ð’Ñ–Ð´ÑÐ¾Ñ‚Ð¾Ðº Ð½Ð°Ð´Ð±Ð°Ð²ÐºÐ¸: " << this->bonusPercent << "%\n";
+    std::cout << "Ð’Ñ–Ð´Ð¿Ñ€Ð°Ñ†ÑŒÐ¾Ð²Ð°Ð½Ð¾ Ð´Ð½Ñ–Ð²: " << this->workedDays << " Ã§ " << this->totalWorkingDays <<"\n";
+    std::cout << "ÐÐ°Ñ€Ð°Ñ…Ð¾Ð²Ð°Ð½Ð° ÑÑƒÐ¼Ð°: " << this->accruedAmount << " Ã£Ã°Ã­\n";
+    std::cout << "Ð£Ñ‚Ñ€Ð¸Ð¼Ð°Ð½Ð° ÑÑƒÐ¼Ð°: " << this->withheldAmount << " Ã£Ã°Ã­\n";
+    std::cout << "Ð¡ÑƒÐ¼Ð° Ð´Ð¾ Ð²Ð¸Ð¿Ð»Ð°Ñ‚Ð¸: " << (this->accruedAmount - this->withheldAmount) << " Ã£Ã°Ã­\n";
 
     return ss.str();
 }
