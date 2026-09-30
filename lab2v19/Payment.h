@@ -5,20 +5,20 @@
 class Payment
 {
 private:
-	std::string lastName; //Прізвище
-	std::string firstName; //ім'я
-	std::string middleName; //По батькові
+	std::string lastName; //РџСЂС–Р·РІРёС‰Рµ
+	std::string firstName; //С–Рј'СЏ
+	std::string middleName; //РџРѕ Р±Р°С‚СЊРєРѕРІС–
 
-	double salary = 0.0;        // Оклад
-	double bonusPercent = 0.0;  // Відсоток надбавки
-	double taxPercent = 13.0;   // Прибутковий податок (13%)
+	double salary = 0.0;        // РћРєР»Р°Рґ
+	double bonusPercent = 0.0;  //Р’С–РґСЃРѕС‚РѕРє РЅР°РґР±Р°РІРєРё
+	double taxPercent = 13.0;   // РџСЂРёР±СѓС‚РєРѕРІРёР№ РїРѕРґР°С‚РѕРє (13%)
 	
-	int startYear = 0;          //Рік вступу на робту
-	int workedDays = 0;         // Відпрацьовано днів
-	int totalWorkingDays = 0;   // Всього робочих днів у місяці
+	int startYear = 0;          //Р С–Рє РІСЃС‚СѓРїСѓ РЅР° СЂРѕР±РѕС‚Сѓ
+	int workedDays = 0;         // Р’С–РґРїСЂР°С†СЊРѕРІР°РЅРѕ РґРЅС–РІ
+	int totalWorkingDays = 0;   // Р’СЃСЊРѕРіРѕ СЂРѕР±РѕС‡РёС… РґРЅС–РІ Сѓ РјС–СЃСЏС†С–
 
-	double accruedAmount = 0.0; // Нарахована сума
-	double withheldAmount = 0.0;// Утримана сума
+	double accruedAmount = 0.0; // РќР°СЂР°С…РѕРІР°РЅР° СЃСѓРјР°
+	double withheldAmount = 0.0;// РЈС‚СЂРёРјР°РЅР° СЃСѓРјР°
 
 public:
 	Payment();
@@ -29,10 +29,10 @@ public:
 	void Display() const;
 	std::string toString() const;
 
-	double CalculateAccrued();                      // Обчислення нарахованої суми
-	double CalculateWithheld();                     // Обчислення утриманої суми
-	double CalculateNetSalary();                    // Обчислення отриманої суми
-	int CalculateExperience(int currentYear) const; // Обчислення стажу
+	double CalculateAccrued();                      // РћР±С‡РёСЃР»РµРЅРЅСЏ РЅР°СЂР°С…РѕРІР°РЅРѕС— СЃСѓРјРё
+	double CalculateWithheld();                     // РћР±С‡РёСЃР»РµРЅРЅСЏ СѓС‚СЂРёРјР°РЅРѕС— СЃСѓРјРё
+	double CalculateNetSalary();                    // РћР±С‡РёСЃР»РµРЅРЅСЏ РѕС‚СЂРёРјР°РЅРѕС— СЃСѓРјРё
+	int CalculateExperience(int currentYear) const; // РћР±С‡РёСЃР»РµРЅРЅСЏ СЃС‚Р°Р¶Сѓ
 	
 };
 
