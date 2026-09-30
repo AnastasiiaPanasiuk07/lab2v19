@@ -33,6 +33,6 @@ public:
 	double CalculateWithheld();                     // Обчислення утриманої суми
 	double CalculateNetSalary();                    // Обчислення отриманої суми
 	int CalculateExperience(int currentYear) const; // Обчислення стажу
-
+	
 };
 
